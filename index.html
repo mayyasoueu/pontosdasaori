@@ -316,13 +316,13 @@
     const DEFAULT_REWARDS = [
       { id: 'r1', title: 'Assistir a um Filme / Série', points: 100, icon: '🎬', tier: 1 },
       { id: 'r2', title: 'Jogar um Jogo no Celular', points: 120, icon: '📱', tier: 1 },
-      { id: 'r3', title: 'Comer um Lanche Favorito', points: 150, icon: '🍰', tier: 1 },
-      { id: 'r4', title: 'Noite de Jogo de Tabuleiro', points: 250, icon: '🎲', tier: 2 },
+      { id: 'r3', title: 'Escolher algo da padaria', points: 150, icon: '🥐', tier: 1 },
+      { id: 'r4', title: 'Jogo com Mayya ou Papai', points: 250, icon: '🎲', tier: 2 },
       { id: 'r5', title: 'Uma Tarde para um Hobby', points: 300, icon: '🎨', tier: 2 },
       { id: 'r6', title: 'Encomendar Comida (Delivery)', points: 450, icon: '🍕', tier: 2 },
       { id: 'r7', title: 'Saída para Jantar', points: 700, icon: '🥂', tier: 3 },
       { id: 'r8', title: 'Um Dia Inteiro de Folga', points: 1000, icon: '🏖️', tier: 3 },
-      { id: 'r9', title: 'Pequena Viagem de Fim de Semana', points: 2500, icon: '✈️', tier: 3 }
+      { id: 'r9', title: 'Passeio em família no Fim de Semana', points: 2500, icon: '🎡', tier: 3 }
     ];
 
     let state = {
@@ -399,7 +399,7 @@
 
     function loadState() {
       try {
-        const saved = localStorage.getItem('saori_points_app_state_v5');
+        const saved = localStorage.getItem('saori_points_app_state_v6');
         if (saved) {
           const parsed = JSON.parse(saved);
           state = { ...state, ...parsed };
@@ -412,6 +412,10 @@
         state.rewards = JSON.parse(JSON.stringify(DEFAULT_REWARDS));
       }
 
+      // Sincroniza recompensas padrão atualizadas
+      state.rewards = JSON.parse(JSON.stringify(DEFAULT_REWARDS));
+
+      // Sincroniza tarefas padrão
       DEFAULT_TASKS.forEach(defTask => {
         if (!state.tasks.some(t => t.id === defTask.id)) {
           state.tasks.push(JSON.parse(JSON.stringify(defTask)));
@@ -423,7 +427,7 @@
 
     function saveState() {
       try {
-        localStorage.setItem('saori_points_app_state_v5', JSON.stringify(state));
+        localStorage.setItem('saori_points_app_state_v6', JSON.stringify(state));
       } catch (e) {}
     }
 
