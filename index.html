@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pontos da Saori ⭐</title>
+  <title>PONTOS DA SAORI ⭐</title>
   
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
@@ -53,7 +53,7 @@
         </div>
         <div>
           <h1 class="text-base sm:text-xl font-extrabold text-slate-900 tracking-tight leading-tight uppercase">
-            Pontos da Saori
+            PONTOS DA SAORI
           </h1>
           <p class="text-xs text-slate-500 font-medium hidden sm:block">Painel de conquistas, tarefas e recompensas</p>
         </div>
@@ -109,7 +109,7 @@
         <div>
           <span class="text-[10px] sm:text-[11px] uppercase font-bold text-indigo-700 tracking-wider block">Próxima Meta</span>
           <div id="stat-next-goal" class="text-xs sm:text-sm font-bold text-slate-800 mt-1 truncate max-w-[130px]">Assistir Filme</div>
-          <span id="stat-next-goal-pts" class="text-[11px] text-indigo-600 font-bold block">Faltam 100 pts</span>
+          <span id="stat-next-goal-pts" class="text-[11px] text-indigo-600 font-bold block">Faltam 10 pts</span>
         </div>
         <div class="w-11 h-11 rounded-2xl bg-indigo-100 text-indigo-700 flex items-center justify-center text-2xl shadow-xs">🎯</div>
       </div>
@@ -144,9 +144,9 @@
             <h2 class="text-base sm:text-lg font-black tracking-tight uppercase flex items-center gap-2">
               <span>📋</span> Tarefas da Saori
             </h2>
-            <span class="text-[10px] uppercase font-black px-2.5 py-1 bg-white/20 rounded-full">Ganha Pontos</span>
+            <span class="text-[10px] uppercase font-black px-2.5 py-1 bg-white/20 rounded-full">1 a 5 Pontos</span>
           </div>
-          <p class="text-xs text-sky-100 mt-1">Clique em "Feito" para completar e creditar no seu saldo!</p>
+          <p class="text-xs text-sky-100 mt-1">Clique em "Feito" para completar e somar pontos!</p>
         </div>
 
         <div id="tasks-list" class="space-y-2.5"></div>
@@ -158,43 +158,43 @@
             <h2 class="text-base sm:text-lg font-black tracking-tight uppercase flex items-center gap-2">
               <span>🎁</span> Recompensas & Prêmios
             </h2>
-            <span class="text-[10px] uppercase font-black px-2.5 py-1 bg-white/20 rounded-full">Gasta Pontos</span>
+            <span class="text-[10px] uppercase font-black px-2.5 py-1 bg-white/20 rounded-full">Troca de Pontos</span>
           </div>
           <p class="text-xs text-orange-100 mt-1">Troque seus pontos acumulados por momentos de descanso e lazer!</p>
         </div>
 
-        <!-- Tier 1: Pequenos Prazeres (100 - 200 pts) -->
+        <!-- Tier 1: Pequenos Prazeres (10 - 20 pts) -->
         <div class="space-y-2.5">
           <div class="flex items-center justify-between border-b border-slate-100 pb-1.5">
             <div class="flex items-center gap-2">
               <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
               <h3 class="text-xs sm:text-sm font-bold text-slate-800">Pequenos Prazeres</h3>
             </div>
-            <span class="text-[11px] font-black px-2.5 py-0.5 rounded-lg bg-emerald-100 text-emerald-800">100 - 200 Pontos</span>
+            <span class="text-[11px] font-black px-2.5 py-0.5 rounded-lg bg-emerald-100 text-emerald-800">10 - 20 Pontos</span>
           </div>
           <div id="rewards-tier-1" class="grid grid-cols-1 sm:grid-cols-3 gap-2.5"></div>
         </div>
 
-        <!-- Tier 2: Médios Prazeres (250 - 500 pts) -->
+        <!-- Tier 2: Médios Prazeres (25 - 50 pts) -->
         <div class="space-y-2.5 pt-2">
           <div class="flex items-center justify-between border-b border-slate-100 pb-1.5">
             <div class="flex items-center gap-2">
               <span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span>
               <h3 class="text-xs sm:text-sm font-bold text-slate-800">Médios Prazeres</h3>
             </div>
-            <span class="text-[11px] font-black px-2.5 py-0.5 rounded-lg bg-amber-100 text-amber-800">250 - 500 Pontos</span>
+            <span class="text-[11px] font-black px-2.5 py-0.5 rounded-lg bg-amber-100 text-amber-800">25 - 50 Pontos</span>
           </div>
           <div id="rewards-tier-2" class="grid grid-cols-1 sm:grid-cols-3 gap-2.5"></div>
         </div>
 
-        <!-- Tier 3: Grandes Recompensas (500+ pts) -->
+        <!-- Tier 3: Grandes Conquistas (70 - 150 pts) -->
         <div class="space-y-2.5 pt-2">
           <div class="flex items-center justify-between border-b border-slate-100 pb-1.5">
             <div class="flex items-center gap-2">
               <span class="w-3 h-3 rounded-full bg-purple-500 inline-block"></span>
               <h3 class="text-xs sm:text-sm font-bold text-slate-800">Grandes Recompensas</h3>
             </div>
-            <span class="text-[11px] font-black px-2.5 py-0.5 rounded-lg bg-purple-100 text-purple-800">500+ Pontos</span>
+            <span class="text-[11px] font-black px-2.5 py-0.5 rounded-lg bg-purple-100 text-purple-800">70+ Pontos</span>
           </div>
           <div id="rewards-tier-3" class="grid grid-cols-1 sm:grid-cols-3 gap-2.5"></div>
         </div>
@@ -208,7 +208,7 @@
           <h2 class="text-lg font-black text-slate-900 flex items-center gap-2">
             <span>🏛️</span> Extrato da Saori
           </h2>
-          <p class="text-xs text-slate-500">Histórico detalhado das entradas (tarefas) e saídas (mimos resgatados).</p>
+          <p class="text-xs text-slate-500">Histórico detalhado das entradas e resgates com lixeira de estorno.</p>
         </div>
         <div class="flex items-center gap-2">
           <button id="reset-balance-btn" class="text-xs text-amber-700 bg-amber-50 hover:bg-amber-100 font-bold px-3 py-2 rounded-xl border border-amber-200 transition-colors flex items-center gap-1.5">
@@ -233,12 +233,12 @@
       <form id="form-task" class="space-y-3">
         <div>
           <label class="block text-[11px] font-bold uppercase text-slate-600 mb-1">Nome da Tarefa</label>
-          <input type="text" id="task-name-input" required placeholder="Ex: Limpar a mesa" class="w-full px-4 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500">
+          <input type="text" id="task-name-input" required placeholder="Ex: Limpar o quintal" class="w-full px-4 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500">
         </div>
         <div class="grid grid-cols-2 gap-3">
           <div>
-            <label class="block text-[11px] font-bold uppercase text-slate-600 mb-1">Pontos (+)</label>
-            <input type="number" id="task-pts-input" required min="1" max="1000" value="20" class="w-full px-4 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500">
+            <label class="block text-[11px] font-bold uppercase text-slate-600 mb-1">Pontos (1 a 5)</label>
+            <input type="number" id="task-pts-input" required min="1" max="5" value="3" class="w-full px-4 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500">
           </div>
           <div>
             <label class="block text-[11px] font-bold uppercase text-slate-600 mb-1">Emoji / Ícone</label>
@@ -263,24 +263,24 @@
       <form id="form-reward" class="space-y-3">
         <div>
           <label class="block text-[11px] font-bold uppercase text-slate-600 mb-1">Nome do Mimo</label>
-          <input type="text" id="reward-name-input" required placeholder="Ex: Noite da Pizza" class="w-full px-4 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-orange-500">
+          <input type="text" id="reward-name-input" required placeholder="Ex: Noite de Sorvete" class="w-full px-4 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-orange-500">
         </div>
         <div class="grid grid-cols-2 gap-3">
           <div>
             <label class="block text-[11px] font-bold uppercase text-slate-600 mb-1">Custo em Pontos</label>
-            <input type="number" id="reward-pts-input" required min="10" max="10000" value="200" class="w-full px-4 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-orange-500">
+            <input type="number" id="reward-pts-input" required min="5" max="500" value="25" class="w-full px-4 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-orange-500">
           </div>
           <div>
             <label class="block text-[11px] font-bold uppercase text-slate-600 mb-1">Emoji / Ícone</label>
-            <input type="text" id="reward-icon-input" required value="🍕" class="w-full px-4 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-orange-500 text-center text-lg">
+            <input type="text" id="reward-icon-input" required value="🍨" class="w-full px-4 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-orange-500 text-center text-lg">
           </div>
         </div>
         <div>
           <label class="block text-[11px] font-bold uppercase text-slate-600 mb-1">Categoria</label>
           <select id="reward-tier-select" class="w-full px-4 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-orange-500 bg-white">
-            <option value="1">Pequenos Prazeres (100 - 200 pts)</option>
-            <option value="2" selected>Médios Prazeres (250 - 500 pts)</option>
-            <option value="3">Grandes Recompensas (500+ pts)</option>
+            <option value="1">Pequenos Prazeres (10 - 20 pts)</option>
+            <option value="2" selected>Médios Prazeres (25 - 50 pts)</option>
+            <option value="3">Grandes Recompensas (70+ pts)</option>
           </select>
         </div>
         <div class="pt-2 flex justify-end gap-2">
@@ -297,32 +297,34 @@
   </div>
 
   <script>
+    // Escala de Tarefas de 1 a 5 Pontos
     const DEFAULT_TASKS = [
-      { id: 't1', num: 1, title: 'Arrumar a Cama', points: 10, icon: '🛏️', count: 0 },
-      { id: 't2', num: 2, title: 'Lavar a Louça', points: 20, icon: '🍽️', count: 0 },
-      { id: 't3', num: 3, title: 'Varrer / Aspirar o Chão', points: 25, icon: '🧹', count: 0 },
-      { id: 't4', num: 4, title: 'Colocar o Lixo Fora', points: 15, icon: '🗑️', count: 0 },
-      { id: 't5', num: 5, title: 'Estender Roupa no Varal', points: 25, icon: '🧺', count: 0 },
-      { id: 't6', num: 6, title: 'Tirar Roupa do Varal', points: 15, icon: '🧺', count: 0 },
-      { id: 't7', num: 7, title: 'Guardar Roupas', points: 20, icon: '👕', count: 0 },
-      { id: 't8', num: 8, title: 'Organizar o Armário', points: 35, icon: '🚪', count: 0 },
-      { id: 't9', num: 9, title: 'Arrumar a Bagunça do Quarto', points: 30, icon: '🧸', count: 0 },
-      { id: 't10', num: 10, title: 'Arrumar a Bagunça da Sala', points: 30, icon: '🛋️', count: 0 },
-      { id: 't11', num: 11, title: 'Tirar Plásticos e Sujeira do Quintal', points: 35, icon: '🌿', count: 0 },
-      { id: 't12', num: 12, title: 'Trocar a Roupa da Irmã Mais Nova', points: 25, icon: '👗', count: 0 },
-      { id: 't13', num: 13, title: 'Dar Banho na Irmã Mais Nova', points: 40, icon: '🛁', count: 0 }
+      { id: 't1', num: 1, title: 'Arrumar a Cama', points: 1, icon: '🛏️', count: 0 },
+      { id: 't2', num: 2, title: 'Colocar o Lixo Fora', points: 1, icon: '🗑️', count: 0 },
+      { id: 't3', num: 3, title: 'Tirar Roupa do Varal', points: 2, icon: '🧺', count: 0 },
+      { id: 't4', num: 4, title: 'Lavar a Louça', points: 2, icon: '🍽️', count: 0 },
+      { id: 't5', num: 5, title: 'Guardar Roupas', points: 2, icon: '👕', count: 0 },
+      { id: 't6', num: 6, title: 'Varrer / Aspirar o Chão', points: 3, icon: '🧹', count: 0 },
+      { id: 't7', num: 7, title: 'Estender Roupa no Varal', points: 3, icon: '🧺', count: 0 },
+      { id: 't8', num: 8, title: 'Trocar a Roupa da Irmã Mais Nova', points: 3, icon: '👗', count: 0 },
+      { id: 't9', num: 9, title: 'Arrumar a Bagunça do Quarto', points: 4, icon: '🧸', count: 0 },
+      { id: 't10', num: 10, title: 'Arrumar a Bagunça da Sala', points: 4, icon: '🛋️', count: 0 },
+      { id: 't11', num: 11, title: 'Organizar o Armário', points: 4, icon: '🚪', count: 0 },
+      { id: 't12', num: 12, title: 'Tirar Plásticos e Sujeira do Quintal', points: 4, icon: '🌿', count: 0 },
+      { id: 't13', num: 13, title: 'Dar Banho na Irmã Mais Nova', points: 5, icon: '🛁', count: 0 }
     ];
 
+    // Escala de Recompensas Proporcional
     const DEFAULT_REWARDS = [
-      { id: 'r1', title: 'Assistir a um Filme / Série', points: 100, icon: '🎬', tier: 1 },
-      { id: 'r2', title: 'Jogar um Jogo no Celular', points: 120, icon: '📱', tier: 1 },
-      { id: 'r3', title: 'Escolher algo da padaria', points: 150, icon: '🥐', tier: 1 },
-      { id: 'r4', title: 'Jogo com Mayya ou Papai', points: 250, icon: '🎲', tier: 2 },
-      { id: 'r5', title: 'Uma Tarde para um Hobby', points: 300, icon: '🎨', tier: 2 },
-      { id: 'r6', title: 'Encomendar Comida (Delivery)', points: 450, icon: '🍕', tier: 2 },
-      { id: 'r7', title: 'Saída para Jantar', points: 700, icon: '🥂', tier: 3 },
-      { id: 'r8', title: 'Um Dia Inteiro de Folga', points: 1000, icon: '🏖️', tier: 3 },
-      { id: 'r9', title: 'Passeio em família no Fim de Semana', points: 2500, icon: '🎡', tier: 3 }
+      { id: 'r1', title: 'Assistir a um Filme / Série', points: 10, icon: '🎬', tier: 1 },
+      { id: 'r2', title: 'Jogar um Jogo no Celular', points: 12, icon: '📱', tier: 1 },
+      { id: 'r3', title: 'Escolher algo da padaria', points: 15, icon: '🥐', tier: 1 },
+      { id: 'r4', title: 'Jogo com Mayya ou Papai', points: 25, icon: '🎲', tier: 2 },
+      { id: 'r5', title: 'Uma Tarde para um Hobby', points: 30, icon: '🎨', tier: 2 },
+      { id: 'r6', title: 'Encomendar Comida (Delivery)', points: 45, icon: '🍕', tier: 2 },
+      { id: 'r7', title: 'Saída para Jantar', points: 70, icon: '🥂', tier: 3 },
+      { id: 'r8', title: 'Um Dia Inteiro de Folga', points: 100, icon: '🏖️', tier: 3 },
+      { id: 'r9', title: 'Passeio em família no Fim de Semana', points: 150, icon: '🎡', tier: 3 }
     ];
 
     let state = {
@@ -399,7 +401,7 @@
 
     function loadState() {
       try {
-        const saved = localStorage.getItem('saori_points_app_state_v6');
+        const saved = localStorage.getItem('saori_points_app_state_scale_1_5');
         if (saved) {
           const parsed = JSON.parse(saved);
           state = { ...state, ...parsed };
@@ -412,22 +414,15 @@
         state.rewards = JSON.parse(JSON.stringify(DEFAULT_REWARDS));
       }
 
-      // Sincroniza recompensas padrão atualizadas
+      state.tasks = JSON.parse(JSON.stringify(DEFAULT_TASKS));
       state.rewards = JSON.parse(JSON.stringify(DEFAULT_REWARDS));
-
-      // Sincroniza tarefas padrão
-      DEFAULT_TASKS.forEach(defTask => {
-        if (!state.tasks.some(t => t.id === defTask.id)) {
-          state.tasks.push(JSON.parse(JSON.stringify(defTask)));
-        }
-      });
 
       recalculateBalanceFromHistory();
     }
 
     function saveState() {
       try {
-        localStorage.setItem('saori_points_app_state_v6', JSON.stringify(state));
+        localStorage.setItem('saori_points_app_state_scale_1_5', JSON.stringify(state));
       } catch (e) {}
     }
 
@@ -474,8 +469,8 @@
           </div>
 
           <div class="flex items-center gap-2">
-            <span class="px-2 py-0.5 sm:px-2.5 sm:py-1 text-xs font-black rounded-xl bg-sky-100 text-sky-800 border border-sky-200 whitespace-nowrap">
-              +${task.points} pts
+            <span class="px-2.5 py-1 text-xs font-black rounded-xl bg-sky-100 text-sky-800 border border-sky-200 whitespace-nowrap">
+              +${task.points} ${task.points === 1 ? 'pt' : 'pts'}
             </span>
             <button onclick="completeTask('${task.id}')" class="px-3 py-1.5 bg-sky-600 hover:bg-sky-700 active:scale-95 text-white font-bold text-xs rounded-xl shadow transition-all flex items-center gap-1">
               <span>✓</span> <span>Feito!</span>
@@ -505,7 +500,7 @@
 
       playTaskSound();
       triggerBumpEffect();
-      showToast(`+${task.points} pontos para Saori em "${task.title}"!`, '⭐');
+      showToast(`+${task.points} ${task.points === 1 ? 'ponto' : 'pontos'} para Saori em "${task.title}"!`, '⭐');
       saveState();
       updateUI();
     };
@@ -721,7 +716,6 @@
         showToast('Saldo e extrato zerados com sucesso!', '🔄');
       });
 
-      // Modais
       const modalTask = document.getElementById('modal-task');
       document.getElementById('open-new-task-modal').addEventListener('click', () => modalTask.classList.remove('hidden'));
       document.querySelectorAll('.modal-close-task').forEach(el => el.addEventListener('click', () => modalTask.classList.add('hidden')));
